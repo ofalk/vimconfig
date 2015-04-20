@@ -53,7 +53,7 @@ let mapleader=","
 "color jellybeans
 
 set cursorline
-"set expandtab
+set expandtab
 set modelines=0
 set shiftwidth=2
 set clipboard=unnamed
@@ -82,5 +82,8 @@ let g:airline#extensions#syntastic#enabled = 1
 let g:airline#extensions#hunks#enabled = 1
 let g:airline#extensions#hunks#non_zero_only = 0
 let g:airline#extensions#hunks#hunk_symbols = ['+', '~', '-']
+
+" For Puppet lint
+let g:syntastic_puppet_puppetlint_args = "--no-autoloader_layout-check --disable_80chars"
 
 set laststatus=2
