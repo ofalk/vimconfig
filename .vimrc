@@ -71,6 +71,8 @@ set ignorecase
 set smartcase
 
 let g:syntastic_enable_perl_checker = 1
+let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_check_on_open = 1
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_detect_modified=1
@@ -84,6 +86,6 @@ let g:airline#extensions#hunks#non_zero_only = 0
 let g:airline#extensions#hunks#hunk_symbols = ['+', '~', '-']
 
 " For Puppet lint
-let g:syntastic_puppet_puppetlint_args = "--no-autoloader_layout-check --disable_80chars"
+let g:syntastic_puppet_puppetlint_args = "--disable_80chars"
 
 set laststatus=2
