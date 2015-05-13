@@ -61,7 +61,7 @@ set synmaxcol=128
 set ttyscroll=10
 set encoding=utf-8
 set tabstop=4
-set nowrap
+set wrap
 "set number
 "set nowritebackup
 "set noswapfile
@@ -87,5 +87,13 @@ let g:airline#extensions#hunks#hunk_symbols = ['+', '~', '-']
 
 " For Puppet lint
 let g:syntastic_puppet_puppetlint_args = "--disable_80chars"
+
+" detect Puppet filetype
+autocmd BufRead,BufNewFile *.pp set filetype=puppet
+autocmd BufRead,BufNewFile *.pp setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab textwidth=80 smarttab
+"
+" detect Perl filetype
+autocmd BufRead,BufNewFile *.pl set filetype=perl
+autocmd BufRead,BufNewFile *.pl setlocal tabstop=4 shiftwidth=4 softtabstop=4 noexpandtab textwidth=80 smarttab
 
 set laststatus=2
