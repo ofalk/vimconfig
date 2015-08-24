@@ -69,6 +69,7 @@ set wrap
 set hlsearch
 set ignorecase
 set smartcase
+set number
 
 let g:syntastic_enable_perl_checker = 1
 let g:syntastic_always_populate_loc_list = 1
@@ -90,7 +91,7 @@ let g:syntastic_puppet_puppetlint_args = "--disable_80chars"
 
 " detect Puppet filetype
 autocmd BufRead,BufNewFile *.pp set filetype=puppet
-autocmd BufRead,BufNewFile *.pp setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab textwidth=80 smarttab
+autocmd BufRead,BufNewFile *.pp setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab textwidth=80 smarttab formatoptions-=t
 "
 " detect Perl filetype
 autocmd BufRead,BufNewFile *.pl set filetype=perl
