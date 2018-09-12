@@ -5,7 +5,7 @@ pushd vimconfig.ofalk.git
 if [ -e ~/.vim ]; then
 	mv ~/.vim ~/.vim.old
 fi
-ln -sf `pwd`/.vim ~/.vim
+ln -sf `pwd` ~/.vim
 if [ -e ~/.vimrc ]; then
 	mv ~/.vimrc ~/.vimrc.old
 fi
