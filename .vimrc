@@ -31,7 +31,6 @@ call vundle#begin()
 :silent! Plugin 'libperl.vim'
 :silent! Bundle 'perlcritic-compiler-script'
 :silent! Plugin 'perl-support.vim'
-:silent! Plugin 'StyleChecker--perl'
 :silent! Bundle 'update_perl_line_directives'
 :silent! Plugin 'surround.vim'
 :silent! Plugin 'Townk/vim-autoclose'
@@ -39,6 +38,7 @@ call vundle#begin()
 
 :silent! Plugin 'vim-addon-signs'
 :silent! Plugin 'vim-symbols-strings'
+:silent! Plugin 'ap/vim-css-color'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 
