@@ -1,5 +1,5 @@
 set nocompatible " be iMproved
-set viminfo='20,<1000,s1000,:20,%,n~/.viminfo “ Increase buffer size for search
+" set viminfo='20,<1000,s1000,:20,%,n~/.viminfo “ Increase buffer size for search
 set history=50            " keep 50 lines of command line history
 set nofixeol                 " don't fix end-of-line errors
 filetype off " must be off before Vundle has run
