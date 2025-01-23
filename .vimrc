@@ -37,7 +37,7 @@ call vundle#begin()
 :silent! Plugin 'libperl.vim'
 :silent! Bundle 'perlcritic-compiler-script'
 :silent! Plugin 'perl-support.vim'
-:silent! Bundle 'update_perl_line_directives'
+":silent! Bundle 'update_perl_line_directives'
 :silent! Plugin 'surround.vim'
 :silent! Plugin 'Townk/vim-autoclose'
 :silent! Plugin 'vim-kickstart'
@@ -64,7 +64,7 @@ set modelines=0
 set shiftwidth=2
 set clipboard=unnamed
 set synmaxcol=128
-set ttyscroll=10
+"set ttyscroll=10
 set encoding=utf-8
 set tabstop=4
 set wrap
